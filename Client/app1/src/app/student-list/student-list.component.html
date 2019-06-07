@@ -1,0 +1,16 @@
+<h2>Student list</h2>
+
+<table class="table table-striped">
+  <tr>
+    <th>Roll Number</th>
+    <th>Name</th>
+    <th>Marks</th>
+  </tr>
+  <tbody *ngFor="let student of students">
+    <tr>
+      <td>{{student.roll_number}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.mark}}</td>
+    </tr>
+  </tbody>
+</table>

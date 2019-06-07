@@ -1,0 +1,23 @@
+<h1>Insert Student Record</h1>
+
+<div style="margin-top: 20px" class="container">
+    <div class="row ">
+        <div style="margin-right: 10px" class="md-col-6">
+            <label for="">Roll Number</label>
+            <input [(ngModel)]="rollNo" class="form-control" type="text" name="rollNo" value="">
+        </div>
+        <div class="md-col-6">
+            <label for="">Name</label>
+            <input [(ngModel)]="name" class="form-control" type="text" name="name" value="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="md-col-6">
+            <label for="">Marks</label>
+            <input [(ngModel)]="mark" class="form-control" type="text" name="marks" value="">
+        </div>
+        <div class="md-col-6">
+            <input (click)='onSubmit()' style="margin-top: 30px; margin-left: 30px" type="button" class="btn btn-success" value="Submit">
+        </div>
+    </div>
+</div>
